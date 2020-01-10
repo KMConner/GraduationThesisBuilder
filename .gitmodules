@@ -1,9 +1,9 @@
 [submodule "pandoc"]
 	path = pandoc
-	url = git@github.com:KMConner/pandoc.git
+	url = git://github.com:KMConner/pandoc.git
 [submodule "pandoc-crossref"]
 	path = pandoc-crossref
-	url = git@github.com:KMConner/pandoc-crossref.git
+	url = git://github.com:KMConner/pandoc-crossref.git
 [submodule "pandoc-citeproc"]
 	path = pandoc-citeproc
-	url = git@github.com:jgm/pandoc-citeproc.git
+	url = git://github.com:jgm/pandoc-citeproc.git
