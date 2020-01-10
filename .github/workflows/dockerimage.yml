@@ -21,4 +21,4 @@ jobs:
       # Docker Image tag
         image-tag: latest
       # Extract git-tag from repository
-        extract-git-tag: true
+        extract-git-tag: false
