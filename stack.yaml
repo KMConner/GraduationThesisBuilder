@@ -1,0 +1,33 @@
+flags:
+  pandoc:
+    trypandoc: false
+    embed_data_files: true
+    static: false
+  pandoc-citeproc:
+    bibutils: true
+    embed_data_files: true
+    unicode_collation: false
+    test_citeproc: false
+    debug: false
+packages:
+- './pandoc'
+- './pandoc-citeproc'
+- './pandoc-crossref'
+extra-deps:
+- pandoc-types-1.20
+- texmath-0.12
+- haddock-library-1.8.0
+- skylighting-0.8.3
+- skylighting-core-0.8.3
+- regex-pcre-builtin-0.95.0.8.8.35
+- regex-base-0.94.0.0
+- doclayout-0.2.0.1
+- emojis-0.1
+- jira-wiki-markup-1.0.0
+- HsYAML-0.2.0.0
+- HsYAML-aeson-0.2.0.0
+- doctemplates-0.8
+- roman-numerals-0.5.1.5
+ghc-options:
+   "$locals": -fhide-source-paths -Wno-missing-home-modules
+resolver: lts-14.5
