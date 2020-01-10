@@ -1,6 +1,5 @@
 FROM haskell:8.6.5
 
-RUN git config --global url.https://github.com/.insteadOf git://github.com/
 RUN mkdir /work
 WORKDIR /work
 RUN git clone --recursive git://github.com/KMConner/GraduationThesisBuilder.git
