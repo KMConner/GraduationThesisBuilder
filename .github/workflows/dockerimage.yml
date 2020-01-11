@@ -13,4 +13,3 @@ jobs:
         name: kmconner/kuisthesis-builder
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: hub.docker.com
