@@ -25,5 +25,4 @@ data/reference.odt
 .stack-work
 cabal.project.local
 /dist-newstyle/
-stack.yaml.lock
 
