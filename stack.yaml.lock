@@ -47,13 +47,6 @@ packages:
   original:
     hackage: regex-pcre-builtin-0.95.0.8.8.35
 - completed:
-    hackage: regex-base-0.94.0.0@sha256:d514eab2aa9ba4b9d14900ac40cbdea1993372466a6cc6ffeeab59a1975563c0,2166
-    pantry-tree:
-      size: 483
-      sha256: d147c3c3e3df525bd3909327ee287911f29c9fdf671350cae9e9c4164ceeaea6
-  original:
-    hackage: regex-base-0.94.0.0
-- completed:
     hackage: doclayout-0.2.0.1@sha256:0410e40c4fa8e299b4f5fa03d378111b9d0effdf59134c95882a160637887ba8,2063
     pantry-tree:
       size: 424
@@ -96,12 +89,12 @@ packages:
   original:
     hackage: doctemplates-0.8
 - completed:
-    hackage: roman-numerals-0.5.1.5@sha256:819d04d9d442b24629dd058f6f0b02bd78e9f9ae99538bc44ca448f1cb2b7b01,1208
+    hackage: pandoc-citeproc-0.16.4.1@sha256:4700f5bda420d343ce1262fb5c4b244d785b98d6277698fb1d10a713001a8e17,8721
     pantry-tree:
-      size: 220
-      sha256: 2154c0f4a11842593586dc1932e233cd8c802994763f7d3ce3e5916be8bc7ee5
+      size: 25492
+      sha256: 539b6ded39de91744b7cbba9757c33868299ce96713e154ccaa2a1d2a144d90b
   original:
-    hackage: roman-numerals-0.5.1.5
+    hackage: pandoc-citeproc-0.16.4.1
 snapshots:
 - completed:
     size: 524104
