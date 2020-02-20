@@ -1,0 +1,23 @@
+# Title in Japanese
+jtitle: 日本語のタイトル
+
+# Title in English
+etitle: Title in English
+
+# Author's name in Japanese
+jauthor: 日本語 氏名
+
+# Author's name in English
+eauthor: English Name
+
+# Entrance year
+entranceYear: 2016
+
+# Supervisor's name
+supervisor: 指導 教員 教授
+
+# Relative path to bib file from markdown file directory
+bibliography: path/to/bib_file
+
+# Submission date
+#date: 2020年2月7日

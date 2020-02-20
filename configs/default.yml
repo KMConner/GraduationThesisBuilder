@@ -1,0 +1,8 @@
+output-file: ./input.tex
+cite-method: biblatex
+standalone: true
+from: markdown+raw_tex+latex_macros+fenced_divs-smart
+to: kuisthesis
+metadata:
+  biblio-style: kuisunsrt
+  documentclass: kuisthesis
