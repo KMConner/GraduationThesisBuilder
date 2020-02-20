@@ -21,21 +21,21 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ~/.stack
-        key: ${{ runner.os }}-stack-${{ hashFiles('./pandoc/stack.yaml.lock') }}
+        key: ${{ runner.os }}-stack-${{ hashFiles('pandoc/stack.yaml.lock') }}
         restore-keys: |
-          ${{ runner.os }}-stack-${{ hashFiles('./pandoc/stack.yaml.lock') }}
+          ${{ runner.os }}-stack-${{ hashFiles('pandoc/stack.yaml.lock') }}
           ${{ runner.os }}-stack-
     - name: Cache .stack-work
       uses: actions/cache@v1
       with:
-        path: ./pandoc/.stack-work
-        key: ${{ runner.os }}-work-${{ hashFiles('./pandoc/stack.yaml.lock') }}
+        path: pandoc/.stack-work
+        key: ${{ runner.os }}-work-${{ hashFiles('pandoc/stack.yaml.lock') }}
         restore-keys: |
-          ${{ runner.os }}-work-${{ hashFiles('./pandoc/stack.yaml.lock') }}
+          ${{ runner.os }}-work-${{ hashFiles('pandoc/stack.yaml.lock') }}
           ${{ runner.os }}-work-
     - name: stack build
       run: stack update && stack setup && stack build
-      working-directory: ./pandoc
+      working-directory: pandoc
     - name: Copy Built Binary
       run: mkdir ../out && mv $(stack path --local-install-root)/bin/* ../out/
       working-directory: ./pandoc
