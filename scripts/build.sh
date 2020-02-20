@@ -12,7 +12,7 @@ MARKDOWN_DIR=$(realpath $1)
 CONFIG_YML=$(realpath $2)
 LATEX_FILES_DIR=$(realpath $3)
 OUTPUT_PATH=$(realpath $4)
-BASE_DIR=$(realpath `dirname $0`)/../
+BASE_DIR=$(realpath `dirname $0`)/..
 TEMP_DIR=$BASE_DIR/temp
 
 cd $(dirname $0)/
