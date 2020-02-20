@@ -34,7 +34,7 @@ jobs:
           ${{ runner.os }}-work-${{ hashFiles('pandoc/stack.yaml.lock') }}
           ${{ runner.os }}-work-
     - name: stack build
-      run: stack update && stack setup && stack build
+      run: stack update && stack setup && stack clean && stack build
       working-directory: pandoc
     - name: Copy Built Binary
       run: mkdir ../out && mv $(stack path --local-install-root)/bin/* ../out/
