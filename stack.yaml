@@ -17,8 +17,7 @@
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
-resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/18.yaml
+resolver: lts-18.10
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -30,7 +29,7 @@ resolver:
 #   - auto-update
 #   - wai
 packages:
-- .
+- '.'
 # Dependency packages to be pulled from upstream that are not in the resolver.
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
@@ -40,7 +39,32 @@ packages:
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
-# extra-deps: []
+extra-deps:
+- pandoc-2.16.2
+- aeson-pretty-0.8.9
+- citeproc-0.6
+- commonmark-0.2.1.1
+- commonmark-extensions-0.2.2
+- doclayout-0.3.1.1
+- doctemplates-0.10
+- hslua-2.0.1
+- hslua-classes-2.0.0
+- hslua-core-2.0.0.2
+- hslua-marshalling-2.0.1
+- hslua-module-path-1.0.0
+- hslua-module-system-1.0.0
+- hslua-module-text-1.0.0
+- hslua-module-version-1.0.0
+- hslua-objectorientation-2.0.1
+- hslua-packaging-2.0.0
+- lua-2.0.1
+- emojis-0.1.2
+- ipynb-0.1.0.2
+- lpeg-1.0.1
+- pandoc-types-1.22.1
+- skylighting-core-0.12.1
+- skylighting-0.12.1
+- texmath-0.12.3.3
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

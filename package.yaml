@@ -1,4 +1,4 @@
-name:                simple
+name:                GraduationThesisBuilder
 version:             0.1.0.0
 github:              "githubuser/simple"
 license:             BSD3
@@ -8,7 +8,6 @@ copyright:           "2021 Author name here"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -21,6 +20,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- pandoc >= 2.16 && < 2.17
+- text >= 1.2.4 && < 1.2.5
 
 library:
   source-dirs: src
@@ -34,15 +35,4 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - simple
-
-tests:
-  simple-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - simple
+    - GraduationThesisBuilder

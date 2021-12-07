@@ -26,4 +26,4 @@ data/reference.odt
 cabal.project.local
 /dist-newstyle/
 temp/
-
+*.cabal
