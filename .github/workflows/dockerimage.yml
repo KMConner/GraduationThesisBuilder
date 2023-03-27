@@ -40,7 +40,7 @@ jobs:
       run: mkdir ../out && mv $(stack path --local-install-root)/bin/* ../out/
       working-directory: ./pandoc
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: kmconner/kuisthesis-builder
         username: ${{ secrets.DOCKER_USERNAME }}
